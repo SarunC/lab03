@@ -51,7 +51,7 @@ public class CustomerController {
     public boolean addCustomer(@RequestParam("id") String ID, @RequestParam("name") String n, @RequestParam("sex") String s, @RequestParam("age") int a){
         return customers.add(new Customer(ID, n, s, a)) ? true : false;
     }
-    @RequestMapping(value = "/addCustomer", method = RequestMethod.POST)
+    @RequestMapping(value = "/addCustomer2", method = RequestMethod.POST)
     public boolean addCustomer2(@RequestParam("id") String ID, @RequestParam("name") String n, @RequestParam("sex") String s, @RequestParam("age") int a){
         return customers.add(new Customer(ID, n, s, a)) ? true : false;
     }
